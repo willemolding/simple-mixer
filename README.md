@@ -1,15 +1,17 @@
-# Simple Mixer 💸♻️💸
+# Simple Private Pool 💸♻️💸
 
-A tornado-cash style coin mixer implemented using RISC Zero
+A private pool protocol implementing using RISC Zero
+
+> This is for educational and example purposes only
 
 ## About
 
-Implements a protocol very similar to the original Tornado-cash with the following changes:
+Implements a private pool with following properties:
 
 - Uses sha256 hashing for the nullifier and commitment tree instead of Pederson and MiMC hashes
 - Removes the withdrawal fee functionality. Mostly to keep the demo simple.
 
-Why rewrite tornado cash with RISC Zero? Aside from being a nice example it opens up the possibility to compose additional proofs with the withdrawal proofs. For example it would be straightforward to add compliance checking to ensure that the withdrawer is a member of a whitelisted set without linking this identity to their account.
+Why rewrite this with RISC Zero? Aside from being a nice example it opens up the possibility to compose additional proofs with the withdrawal proofs. For example it would be straightforward to add compliance checking to ensure that the withdrawer is a member of a whitelisted set without linking this identity to their account.
 
 The protocol works as follows:
 
